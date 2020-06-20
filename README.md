@@ -30,7 +30,7 @@ gcloud compute instances create healthplus-assignment \
 
 Running the shell script will first install some required dependencies and then build and run three docker containers (i.e. the services in the docker-compose file):
 1. MSSQL is to set up the MSSQL database;
-2. Q2 sets up a python env to run the script for question 3 (*Note 2 below*);
+2. Q2 sets up a python env to run the script for question 2 (*Note 2 below*);
 3. Q3 sets up a python env to run the script for question 3 (*Note 2 below*);
 4. Both Q2 and Q3 end by saving results as csv in the corresponding service folders.
 
