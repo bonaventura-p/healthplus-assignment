@@ -17,9 +17,9 @@ gcloud compute instances create healthplus-assignment \
 --zone europe-west4-a )
 
 2. SSH into the instance (*Note 1 below*)
-3. Install git (e.g. sudo apt-get install -y git)
+3. Install git (e.g. sudo apt-get update && sudo apt-get install -y git)
 4. git clone this directory 
-5. Give permissions to **healthplus-assignment/execute.sh** (e.g. with chmod +x)
+5. Give permissions to **healthplus-assignment/execute.sh** (e.g. with sudo chmod +x)
 6. Run the shell script **healthplus-assignment/execute.sh**
 
 
@@ -38,6 +38,7 @@ Running the shell script will first install some required dependencies and then 
 ### Remarks
 - In Q2 the final table has fields with multiple entries (e.g. if the patient has multiple records on the same timestamp). This of course is not the way I would go about to run analyses but it was an efficient ways of creating timelines (as requested);
 - In Q3, the key-value structure of the features has not been changed and the tables have only been rearranged into one by patient_id x timestamp. With a clear analysis goal in mind (e.g. training a specific model) I might have taken a different approach. This is just a neat way of putting all the information into a single table ordered by patient and time feature;
+- In a production setting, I would have tried to minimise the size of the images (e.g. alpine vs ubuntu, or see *Note 2* for python);
 - In a production setting, I would have also consolidated the rules for the table column names. 
 
 <br/>
