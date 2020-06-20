@@ -16,10 +16,6 @@ services:
     build:
       context: ./q2
     image: q2
-    environment:
-      - UID=SA
-      - PWD=Password123
-
     volumes:
       - ./q2:/code
 
@@ -27,9 +23,5 @@ services:
     build:
       context: ./q3
     image: q3
-    environment:
-      - UID=SA
-      - PWD=Password123
-
     volumes:
       - ./q3:/code
