@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a63ee1a-9e94-40ef-865f-0e810fd98809" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gcp_startup.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gcp_startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/gcp_startup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q1/.ipynb_checkpoints/question1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/q1/.ipynb_checkpoints/question1-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q1/question1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/q1/question1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

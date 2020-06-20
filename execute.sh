@@ -20,6 +20,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-
 #give permissions
 sudo chmod +x /usr/local/bin/docker-compose
 
+#get docker
 sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
 
