@@ -11,7 +11,7 @@ from helpers import DataframeCleaner, TimeConverter, columnsDict, TableCreator
 conn_string=('Driver=/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.5.so.2.1;'
     'Server={};'
     'Database=master;'
-    'uid=sa;pwd=Password123'.format('mssql:1433'))
+    'uid=sa;pwd=Password123'.format('mssql'))
 
 
 #'35.204.21.80,1433'
@@ -49,4 +49,5 @@ patientDf = pd.concat(
 patientDf = DataframeCleaner(patientDf)
 
 patientDf.to_csv('patientTimelineTable.csv', header=True, index=False)
+print('Success')
 

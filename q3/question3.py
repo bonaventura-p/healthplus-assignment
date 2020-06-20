@@ -11,7 +11,7 @@ from helpers import TableCreator, columnsDict
 conn_string=('Driver=/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.5.so.2.1;'
     'Server={};'
     'Database=master;'
-    'uid=sa;pwd=Password123'.format('mssql:1433'))
+    'uid=sa;pwd=Password123'.format('mssql,1433'))
 
 
 #'35.204.21.80,1433'
@@ -58,5 +58,5 @@ for table in dataDict:
         lambda x: x[columnsDict[table]['time']] if pd.isnull(x['timestamp']) else x['timestamp'], axis=1)
 
 
-
 featureDf.to_csv('patientFeaturesTable.csv', header=True, index=False)
+print('Success')
