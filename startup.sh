@@ -29,7 +29,7 @@ sudo apt-get install -y unixodbc-dev git
 sudo git clone https://github.com/bonaventura-p/healthplus-assignment.git
 
 cd healthplus-assignment
-sudo docker-compose up -d mssql
+sudo docker-compose up
 
 
 

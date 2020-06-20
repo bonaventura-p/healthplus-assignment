@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a63ee1a-9e94-40ef-865f-0e810fd98809" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/analytics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q1/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/q1/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q2/question2.py" beforeDir="false" afterPath="$PROJECT_DIR$/q2/question2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q3/question3.py" beforeDir="false" afterPath="$PROJECT_DIR$/q3/question3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
