@@ -23,10 +23,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
 
-sudo apt-get install -y unixodbc-dev git
-
-sudo git clone https://github.com/bonaventura-p/healthplus-assignment.git
-
 cd healthplus-assignment
 sudo docker-compose up
 
