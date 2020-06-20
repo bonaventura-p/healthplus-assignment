@@ -41,6 +41,12 @@ Running the shell script will first install some required dependencies and then 
 3. Q3 sets up a python env to run the script for question 3 (*Note 2 below*);
 4. Both Q2 and Q3 end by saving results as csv in the corresponding service folders.
 
+
+### Remarks
+- In Q2 the final table has fields with multiple entries (e.g. if the patient has multiple records on the same timestamp). This of course is not the way I would go about to run analyses but it was an efficient ways of creating timelines (as requested);
+- In Q3, the key-value structure of the features has not been changed and the tables have only been rearranged into one by patient_id x timestamp. With a clear analysis goal in mind (e.g. training a specific model) I might have taken a different approach. This is just a neat way of putting all the information into a single table ordered by patient and time feature;
+- In a production setting, I would have also consolidated the rules for the table column names. 
+
 <br/>
 <br/>
 <br/>
