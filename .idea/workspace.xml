@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a63ee1a-9e94-40ef-865f-0e810fd98809" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/q2/helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q3/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q1/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q1/question1_nb.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q2/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/q2/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q2/patient_table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/analytics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q1/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/q1/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q2/question2.py" beforeDir="false" afterPath="$PROJECT_DIR$/q2/question2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q2/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/q2/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q2/ting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q3/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/q3/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q3/question3.py" beforeDir="false" afterPath="$PROJECT_DIR$/q3/question3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q3/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/q3/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,21 +23,22 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/q3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mssql" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mssql" />
       <recent name="$PROJECT_DIR$/q3" />
       <recent name="$PROJECT_DIR$/q2" />
       <recent name="$PROJECT_DIR$/q1" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/q1" />
       <recent name="$PROJECT_DIR$/q3" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/q2" />
-      <recent name="$PROJECT_DIR$/helpers" />
     </key>
   </component>
   <component name="RunDashboard">
