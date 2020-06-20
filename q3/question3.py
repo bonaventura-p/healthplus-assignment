@@ -3,9 +3,11 @@
 import pyodbc
 import numpy as np
 import pandas as pd
+import datetime
+
+from helpers import TableCreator, columnsDict
 
 
-#from helpers.analytics import TableCreator
 conn_string=('Driver=/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.5.so.2.1;'
     'Server={};'
     'Database=master;'
@@ -13,37 +15,12 @@ conn_string=('Driver=/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.5.so.2.1;'
 
 conn = pyodbc.connect(conn_string)
 
-columnsDict = {'medicationrequest':{'target':'medicationCodeableConcept', 'time':'authoredOn'},
-            '[procedure]':{'target':'code', 'time':'performedPeriod_start'},
-            'condition':{'target':'code', 'time':'onsetDateTime'},
-            'encounter':{'target':'type', 'time':'period_start'},
-            'observation':{'target':'code', 'time':'effectiveDateTime'},
-           }
 
-
-
-def TableCreator(conn):
-
-    tables = "[procedure] encounter condition observation medicationrequest".split()
-
-    query = "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES"
-    names = pd.read_sql(query, conn)
-    # print(names)
-
-    data_dict = {}
-    for table in tables:  # can't do from names.TABLE_name because of [procedure]
-        # print(table)
-        query = "SELECT * FROM {};".format(table)
-        print(table)
-        data_dict[table] = pd.read_sql(query, conn)
-
-    return data_dict
-
-
-
+#creates dict with tables
 dataDict = TableCreator(conn)
 
 
+#merges table with patient id and datetime feature
 mergeList = 'condition observation medicationrequest encounter'.split()
 
 featureDf = dataDict['[procedure]']
@@ -53,15 +30,14 @@ for table in mergeList:
                                 right_on=['patient_id', columnsDict[table]['time']], how='outer',
                                 suffixes=('', str('_' + table)))
 
-# In[21]:
 
 
+#renaming for consistency
 featureDf.rename(columns={'code': 'code_procedure', 'reasonReference_reference': 'reasonReference_reference_procedure'},
                  inplace=True)
 
-# In[ ]:
 
-
+#merging encounter_id columns into 1
 encountersList = ['encounter_id_condition', 'encounter_id_observation', 'encounter_id_medicationrequest']
 
 for encounter in encountersList:
@@ -71,6 +47,7 @@ for encounter in encountersList:
     featureDf.drop(encounter, axis=1, inplace=True)
 
 
+#creating a common timestamps feature
 featureDf['timestamp'] = np.nan
 
 for table in dataDict:

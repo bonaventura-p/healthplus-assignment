@@ -2,5 +2,3 @@ pyodbc
 numpy
 pandas
 datetime
-seaborn
-matplotlib

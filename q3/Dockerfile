@@ -1,3 +1,5 @@
+# this Dockerfile creates a unix image, installs odbc drivers (and dependencies), python and pip install requirements. CMD is python script to complete the task
+
 FROM ubuntu:18.04
 
 RUN apt-get update && apt-get install -y sudo apt-transport-https ca-certificates curl gnupg-agent software-properties-common
