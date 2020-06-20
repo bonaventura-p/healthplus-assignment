@@ -13,9 +13,6 @@ conn_string=('Driver=/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.5.so.2.1;'
     'Database=master;'
     'uid=sa;pwd=Password123'.format('mssql'))
 
-
-#'35.204.21.80,1433'
-
 conn = pyodbc.connect(conn_string)
 
 #create a dictionary with the tables form the sql
