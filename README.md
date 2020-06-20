@@ -1,10 +1,3 @@
-### Remaining tasks
-- clean up
-- turn off ubuntu and notebook on gcp
-
-
-
-
 # healthplus-assignment
 
 
@@ -35,7 +28,7 @@ gcloud compute instances create healthplus-assignment \
 2. Give permissions and execute **healthplus-assignment/execute.sh**
 
 
-Running the shell script will first install some required dependencies and then build and run three docker containers (i.e. the services in the YAML file):
+Running the shell script will first install some required dependencies and then build and run three docker containers (i.e. the services in the docker-compose file):
 1. MSSQL is to set up the MSSQL database;
 2. Q2 sets up a python env to run the script for question 3 (*Note 2 below*);
 3. Q3 sets up a python env to run the script for question 3 (*Note 2 below*);
